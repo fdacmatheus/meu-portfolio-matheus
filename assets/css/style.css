@@ -181,12 +181,12 @@ section {
 
 .fade-in {
     opacity: 0;
-    transition: opacity 1s ease-in-out;
+    transition: opacity 3s ease-in-out;
   }
   .fade-in.active {
     opacity: 1;
   }
-  
+
 /* Estilos slide */
 .slider-main {
     width: 100%;
