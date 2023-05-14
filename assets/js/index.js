@@ -10,6 +10,10 @@ imagem.addEventListener('mouseout', () => {
 const arrow = document.querySelector(".seta");
 const botao = document.getElementById("botao");
 
+//animacao imagem
+
+
+// animacao icone botao
 botao.addEventListener("mouseover", () => {
   arrow.classList.toggle("active");
 });
@@ -26,4 +30,18 @@ botao.addEventListener("click", () => {
 });
 
 
-  
+// fade in effect site
+const sections = document.querySelectorAll('.animacao');
+console.log(sections)
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      }
+    });
+  });
+
+sections.forEach(el => {
+    observer.observe(el);
+  });
