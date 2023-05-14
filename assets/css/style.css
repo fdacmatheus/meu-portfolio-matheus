@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+
+:root {
+    --preto: #000000;
+    --azul-destaque: #3549CB;
+    --cinza-texto: #86888D;
+    --branco: #FFFFFF;
+    --font-almarai: 'Almarai', sans-serif;
+    --container-width: 1200px;
+  }
+
+body {
+    background: var(--preto);
+    color: var(--branco);
+    font-family: var(--font-almarai);
+    background-image: radial-gradient(circle at 0 0, #000, #141414 24%, rgba(53, 73, 203, .15) 37%, #000 49%);
+ } 
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+::-webkit-scrollbar-track {
+    background: var(--preto);
+  }
+  
+::-webkit-scrollbar-thumb {
+    background-color: var(--azul-destaque);
+    border-radius: 8px;
+  }
+
+.logo-header {
+    width: 250px;
+}
+
+.paragrafo-padrao{
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 300;
+}
+h2 {
+    font-size: 32px;
+    font-weight: 300;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+.secundario-h2 {
+    font-weight: 700;
+}
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+}
+
+.cabecalho-div {
+    padding: 32px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabecalho-div ul {
+    display: flex;
+    gap: 16px;
+}
+.cabecalho-div ul li a {
+    color: var(--branco);
+    text-decoration: none;
+}
+
+.fundo-preto-degrade {
+    background-color: #000;
+    background-image: radial-gradient(circle at 0 0, #000, #141414 24%, rgba(53, 73, 203, .15) 37%, #000 49%);
+}
+
+section {
+    min-height: 70vh;
+}
+.secao-principal {
+    padding:  80px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.call-to-action {
+    flex-wrap: wrap;
+    padding-right: 22px;
+}
+
+.call-to-action h1{
+    font-size: 64px;
+}
+
+.call-to-action p{
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 300;
+}
+
+.botao-padrao {
+    margin: 32px 0px;
+    display: inline-flex;
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: 300;
+    background-color: var(--azul-destaque);
+    padding: 16px 24px;
+    border-radius: 32px;
+}
+.botao-padrao img {
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-40deg) skew(0deg, 0deg); transform-style: preserve-3d;
+}
+
+.botao-padrao img:hover {
+    transform: none;
+}
+
+.secao-sobre-mim {
+    display: flex;
+    vertical-align: top;
+}
+.call-to-action-sobre-mim {
+    margin-top:  60px;
+    padding-right: 32px;
+}
+.call-to-action-sobre-mim h2{
+    margin-bottom: 32px;
+}
+.foto-matheus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icones-linguagens ul {
+    margin-top: 50px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.icones-linguagens ul img{
+    width: 80px;
+}
+#img-matheus:hover {
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+}
+/* Estilos slide */
+.slider-main {
+    width: 100%;
+  }
+
+
+.slider img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  
+.slick-slide {
+    height: 100%;
+    display: flex !important;
+    align-items: center;
+    vertical-align: center;
+
+}
+
+.slick-vertical .slick-slide {
+    margin-bottom: 30px;
+  }
+
+
+  .slide {
+    position: relative;
+  }
+  
+  .slide:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.1 ), rgba(0,0,0,1));
+  }
+  
+  .slide:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.1), rgba(0,0,0,0.1));
+  }
+  
+  @media (max-width: 768px) {
+    .secao-principal {
+        padding: 40px 0px;
+        flex-wrap: wrap;
+    }
+    .call-to-action {
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+        align-items: center;
+    }
+    .call-to-action h1{
+        font-size: 32px;
+        text-align: center;
+    }
+    .call-to-action p{
+        text-align: center;
+    }
+    .cabecalho-div ul {
+        display: none;
+    }
+    .logo-div  {
+        margin: 0 auto;
+    }
+    
+    .slider-main {
+        width: 100%;
+        padding: 16px;
+      }
+
+    /* secao sobre mim */
+    .secao-sobre-mim {
+       flex-wrap: wrap;
+       padding: 16px;
+    }
+    .call-to-action-sobre-mim{
+        padding: 0px;
+    }
+    h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+    .paragrafo-padrao{
+        text-align: center;
+        margin: 16px 0px
+    }
+
+    
+}

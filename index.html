@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matheus Web - Sites que geram vendas</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+     <!-- CSS do Slick -->
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+     
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="cabecalho-div">
+                <div class="logo-div">
+                    <img class="logo-header" src="./assets/img/logoMatheusFerreiraBranca.svg" alt="">
+                </div>
+                <div class="menu-div">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Quem sou</a></li>
+                        <li><a href="">Servicos</a></li>
+                        <li><a href="">Contato</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <main class="container secao-principal">
+            <div class="call-to-action">
+                <h1>Experiências que movem negócios para o futuro.</h1>
+                <p class="">O seu site não precisa ser um custo se ele for uma máquina de vendas, entre em contato conosco e faça sua identidade no digital decolar.</p>
+                <a href="" class="botao-padrao"> Faça seu projeto <img src="./assets/img/icons/seta.svg"></a>
+            </div>
+            <div class="slider-main">
+                <div class="slider">
+                    <div class="slide">
+                      <img src="./assets/img/imagem-slider.png">
+                    </div>
+                    <div class="slide">
+                      <img src="./assets/img/imagem-slider.png">
+                    </div>
+                    <div class="slide">
+                      <img src="./assets/img/imagem-slider.png">
+                    </div>
+                  </div>
+            </div>
+        </main>
+    </section>
+<section class="sobre-mim">
+    <div class="container secao-sobre-mim">
+        <div class="call-to-action-sobre-mim">
+        <h2>Saiba mais <strong class="secundario-h2">sobre mim</strong></h2>
+        <p class="paragrafo-padrao">Meu nome é Matheus Ferreira, tenho 22 anos e sou um web designer com habilidades em HTML, CSS, JavaScript, Vue, React, WordPress, Elementor e Node.</p>
+        <p class="paragrafo-padrao">Como estudante de Engenharia de Software, estou sempre em busca de novas formas de inovar e trazer soluções criativas para os projetos em que trabalho.</p>
+        <p class="paragrafo-padrao"> Sou um dev dedicado, atento aos detalhes e apaixonado por tecnologia, que está sempre em busca
+             de soluções eficientes para ajudar as pessoas a transformar suas ideias em realidade.</p>
+        </div>
+        <div class="foto-matheus">
+                <img id="img-matheus"  class="teste" src="./assets/img/foto-matheus.png" alt="">
+                <div class="icones-linguagens">
+                    <ul>
+                        <li><img src="./assets/img/icons/icon-elementor.png" alt=""></li>
+                        <li><img src="./assets/img/icons/icon-javascript.png" alt=""></li>
+                        <li><img src="./assets/img/icons//icon-node.png" alt=""></li>
+                        <li><img src="./assets/img/icons/icon-wordpress.png" alt=""></li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+</section>
+ <!-- jQuery e o Slick -->
+ <script src="./assets/js/index.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script>
+ $('.slider').slick({
+  vertical: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  dots: true,
+  autoplay: true,
+  autoplaySpeed: 3000 // tempo em milissegundos entre cada slide
+});
+
+</script>
+</body>
+</html>
