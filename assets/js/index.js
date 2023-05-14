@@ -1,11 +1,15 @@
 const imagem = document.getElementById('img-matheus');
 
 imagem.addEventListener('mouseover', () => {
-  imagem.src = './assets/img/foto-matheus-hover.png';
+    setTimeout(() => {
+        imagem.src = './assets/img/foto-matheus-hover.png';
+    }, 500);
 });
 
 imagem.addEventListener('mouseout', () => {
-  imagem.src = './assets/img/foto-matheus.png';
+    setTimeout(() => {
+        imagem.src = './assets/img/foto-matheus.png';
+    }, 500)
 });
 const arrow = document.querySelector(".seta");
 const botao = document.getElementById("botao");
