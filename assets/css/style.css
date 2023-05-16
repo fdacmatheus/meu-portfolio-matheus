@@ -10,7 +10,16 @@
     scroll-behavior: smooth;
   }
 
+.botao-whatsapp {
+    position: fixed;
+    bottom: 0;
+    right: 30px;
+}
+.botao-whatsapp a {
+    display: block;
+}
 body {
+    position: relative;
     background: var(--preto);
     color: var(--branco);
     font-family: var(--font-almarai);
